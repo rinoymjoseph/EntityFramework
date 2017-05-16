@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Codify.Entity.Admin.Application">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\Application.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Codify.Entity.Admin.ApplicationRole">
+    <Position X="6.25" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEIAABAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\ApplicationRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Codify.Entity.Admin.Role">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Admin\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Codify.Entity.Admin.User">
+    <Position X="6.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAIIAAAAAAAgAAAAAAAAAAQAAIAAAAAA=</HashCode>
+      <FileName>Admin\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Codify.Entity.Admin.UserApplicationRole">
+    <Position X="0.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAEAAAAAAAAAIAAAAAAgAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Admin\UserApplicationRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Codify.Entity.BaseEntity">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAQAAAAAAAAAAAAgAAAAAAAgAAAQAAAAE=</HashCode>
+      <FileName>BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
