@@ -1,13 +1,9 @@
 ﻿using Codify.Entity.Admin;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Codify.DataAccess.Admin.Repository.Interface
+namespace Codify.DataAccess.Admin.Repository.Interfaces
 {
-    interface IRoleRepository
+    public interface IRoleRepository
     {
         void AddRole(Role role);
         List<Role> GetRoles();

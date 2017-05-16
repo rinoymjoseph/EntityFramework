@@ -1,11 +1,10 @@
-﻿using Codify.DataAccess.Admin.Repository.Interface;
+﻿
+using Codify.DataAccess.Admin.Repository.Interfaces;
 using Codify.Entity.Admin;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Codify.DataAccess.Admin.Repository
 {
