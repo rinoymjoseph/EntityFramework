@@ -1,7 +1,7 @@
-﻿using Codify.DataAccess.Admin;
-using Codify.DataAccess.Admin.Repository;
-using Codify.DataAccess.Admin.Repository.Interfaces;
-using Codify.Entity.Admin;
+﻿using Codify.DataAccess;
+using Codify.DataAccess.Employee.Repository;
+using Codify.DataAccess.Employee.Repository.Interface;
+using Codify.Entity.Employee;
 using System;
 
 namespace Codify.TestConsole
@@ -11,20 +11,22 @@ namespace Codify.TestConsole
         static CodifyDataContext codifyDataContext = new CodifyDataContext();
         static void Main(string[] args)
         {
-            CreateRole();
+            CreateEmployee();
             Console.ReadKey();
         }
 
-        private static void CreateRole()
+        private static void CreateEmployee()
         {
-            Role role = new Role();
-            role.RoleName = "Admin";
-            role.CreatedBy = System.Environment.UserName;
-            role.ModifiedBy = System.Environment.UserName;
-            role.CreatedDate = DateTime.Now;
-            role.ModifiedDate = DateTime.Now;
-            IRoleRepository roleRepository = new RoleRepository(codifyDataContext);
-            roleRepository.AddRole(role);
+            EmployeeEntity employee = new EmployeeEntity();
+            employee.City = "Bangalore";
+            employee.FirstName = "Luke";
+            employee.LastName = "Skywalker";
+            employee.CreatedBy = System.Environment.UserName;
+            employee.ModifiedBy = System.Environment.UserName;
+            employee.CreatedDate = DateTime.Now;
+            employee.ModifiedDate = DateTime.Now;
+            IEmployeeRepository roleRepository = new EmployeeRepository(codifyDataContext);
+            roleRepository.AddEmployee(employee);
             string message = roleRepository.SaveChanges();
             Console.WriteLine(message);
         }

@@ -49,19 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\CodifyDataContext.cs" />
-    <Compile Include="Admin\Configuration\ApplicationConfiguration.cs" />
-    <Compile Include="Admin\Configuration\ApplicationRoleConfiguration.cs" />
-    <Compile Include="Admin\Configuration\RoleConfiguration.cs" />
-    <Compile Include="Admin\Configuration\UserApplicationRoleConfiguration.cs" />
-    <Compile Include="Admin\Configuration\UserConfiguration.cs" />
-    <Compile Include="Admin\Repository\Interface\IApplicationRepository.cs" />
-    <Compile Include="Admin\Repository\Interface\IApplicationRoleRepository.cs" />
-    <Compile Include="Admin\Repository\Interface\IRoleRepository.cs" />
-    <Compile Include="Admin\Repository\Interface\IUserApplicationRoleRepository.cs" />
-    <Compile Include="Admin\Repository\Interface\IUserRepository.cs" />
-    <Compile Include="Admin\Repository\RoleRepository.cs" />
-    <Compile Include="BasicEntityConfiguration.cs" />
+    <Compile Include="CodifyDataContext.cs" />
+    <Compile Include="BaseEntityConfiguration.cs" />
+    <Compile Include="Employee\Configuration\EmployeeConfiguration.cs" />
+    <Compile Include="Employee\Repository\EmployeeRepository.cs" />
+    <Compile Include="Employee\Repository\Interface\IEmployeeRepository.cs" />
+    <Compile Include="Order\Configuration\OrderConfiguration.cs" />
+    <Compile Include="Order\Configuration\OrderDetailsConfiguration.cs" />
+    <Compile Include="Order\Repository\Interface\IOrderDetailsRepository.cs" />
+    <Compile Include="Order\Repository\Interface\IOrderRepository.cs" />
+    <Compile Include="Order\Repository\OrderDetailsRepository.cs" />
+    <Compile Include="Order\Repository\OrderRepository.cs" />
+    <Compile Include="Product\Configuration\ProductConfiguration.cs" />
+    <Compile Include="Product\Repository\Interface\IProductRepository.cs" />
+    <Compile Include="Product\Repository\ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseRepository.cs" />
   </ItemGroup>

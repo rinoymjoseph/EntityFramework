@@ -40,17 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Application.cs" />
-    <Compile Include="Admin\ApplicationRole.cs" />
-    <Compile Include="Admin\Role.cs" />
-    <Compile Include="Admin\User.cs" />
-    <Compile Include="Admin\UserApplicationRole.cs" />
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="Employee\EmployeeEntity.cs" />
+    <Compile Include="Order\OrderEntity.cs" />
+    <Compile Include="Order\OrderDetailsEntity.cs" />
+    <Compile Include="Product\ProductEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

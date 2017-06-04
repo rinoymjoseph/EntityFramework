@@ -16,7 +16,6 @@ namespace Codify.DataAccess
             Property(p => p.CreatedBy).HasColumnName("CREATED_BY").HasMaxLength(50).IsRequired();
             Property(p => p.ModifiedDate).HasColumnName("MODIFIED_DATE").IsRequired();
             Property(p => p.ModifiedBy).HasColumnName("MODIFIED_BY").HasMaxLength(50).IsRequired();
-            Property(p => p.IsCurrent).HasColumnName("IS_CURRENT").IsRequired();
             Property(p => p.IsDeleted).HasColumnName("IS_DELETED").IsRequired();
             Property(e => e.RecordTimeStamp).HasColumnName("RTS").IsRowVersion().IsRequired();
         }
