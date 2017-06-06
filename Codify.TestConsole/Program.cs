@@ -11,16 +11,26 @@ namespace Codify.TestConsole
         static CodifyDataContext codifyDataContext = new CodifyDataContext();
         static void Main(string[] args)
         {
-            CreateEmployee();
+            InsertEmployees();
             Console.ReadKey();
         }
 
-        private static void CreateEmployee()
+        private static void InsertEmployees()
+        {
+            CreateEmployee("Joy", "Smith", "Los Angeles", "USA");
+            CreateEmployee("Abram", "Ivanov", "Moscow", "Russia");
+            CreateEmployee("Aryan", "Sodhi", "Delhi", "India");
+            CreateEmployee("James", "Williams", "Sidney", "Australia");
+            CreateEmployee("Muhammed", "Emir", "Istanbul", "Turkey");
+        }
+
+        private static void CreateEmployee(string firstName, string lastName, string city, string country)
         {
             EmployeeEntity employee = new EmployeeEntity();
-            employee.City = "Bangalore";
-            employee.FirstName = "Luke";
-            employee.LastName = "Skywalker";
+            employee.City = city;
+            employee.Country = country;
+            employee.FirstName = firstName;
+            employee.LastName = lastName;
             employee.CreatedBy = System.Environment.UserName;
             employee.ModifiedBy = System.Environment.UserName;
             employee.CreatedDate = DateTime.Now;
